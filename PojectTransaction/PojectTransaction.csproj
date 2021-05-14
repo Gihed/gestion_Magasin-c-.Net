@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA4DCB6B-819F-4F0A-8377-99154940C9E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PojectTransaction</RootNamespace>
+    <AssemblyName>PojectTransaction</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjouterEmployer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterEmployer.Designer.cs">
+      <DependentUpon>AjouterEmployer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterProduit.Designer.cs">
+      <DependentUpon>AjouterProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterQuantiter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterQuantiter.Designer.cs">
+      <DependentUpon>AjouterQuantiter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterTransaction.Designer.cs">
+      <DependentUpon>AjouterTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAClient.Designer.cs">
+      <DependentUpon>CAClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAProduit.Designer.cs">
+      <DependentUpon>CAProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client.cs" />
+    <Compile Include="Accueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accueil.Designer.cs">
+      <DependentUpon>Accueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterClient.Designer.cs">
+      <DependentUpon>AjouterClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnexionBase.cs" />
+    <Compile Include="ListeClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeClient.Designer.cs">
+      <DependentUpon>ListeClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListeDesTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeDesTransactions.Designer.cs">
+      <DependentUpon>ListeDesTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListeProduit2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeProduit2.Designer.cs">
+      <DependentUpon>ListeProduit2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifierClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifierClient.Designer.cs">
+      <DependentUpon>ModifierClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifierProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifierProduit.Designer.cs">
+      <DependentUpon>ModifierProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifierTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifierTransaction.Designer.cs">
+      <DependentUpon>ModifierTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produit.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SupprimerClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupprimerClient.Designer.cs">
+      <DependentUpon>SupprimerClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupprimerProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupprimerProduit.Designer.cs">
+      <DependentUpon>SupprimerProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupprimerTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupprimerTransaction.Designer.cs">
+      <DependentUpon>SupprimerTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction.cs" />
+    <Compile Include="Validation.cs" />
+    <EmbeddedResource Include="AjouterEmployer.resx">
+      <DependentUpon>AjouterEmployer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterProduit.resx">
+      <DependentUpon>AjouterProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterQuantiter.resx">
+      <DependentUpon>AjouterQuantiter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterTransaction.resx">
+      <DependentUpon>AjouterTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accueil.resx">
+      <DependentUpon>Accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterClient.resx">
+      <DependentUpon>AjouterClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAClient.resx">
+      <DependentUpon>CAClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAProduit.resx">
+      <DependentUpon>CAProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeClient.resx">
+      <DependentUpon>ListeClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeDesTransactions.resx">
+      <DependentUpon>ListeDesTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeProduit2.resx">
+      <DependentUpon>ListeProduit2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierClient.resx">
+      <DependentUpon>ModifierClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierProduit.resx">
+      <DependentUpon>ModifierProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierTransaction.resx">
+      <DependentUpon>ModifierTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SupprimerClient.resx">
+      <DependentUpon>SupprimerClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupprimerProduit.resx">
+      <DependentUpon>SupprimerProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupprimerTransaction.resx">
+      <DependentUpon>SupprimerTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\follow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updated.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\retour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\retour1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
