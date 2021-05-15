@@ -60,7 +60,6 @@ C:\Users\Jihed\source\repos\PojectTransaction\PojectTransaction\bin\Debug\System
 C:\Users\Jihed\source\repos\PojectTransaction\PojectTransaction\bin\Debug\MySql.Data.xml
 C:\Users\Jihed\source\repos\PojectTransaction\PojectTransaction\obj\Debug\PojectTransaction.csprojAssemblyReference.cache
 C:\Users\Jihed\source\repos\PojectTransaction\PojectTransaction\obj\Debug\PojectTransaction.exe.config
-C:\Users\Jihed\source\repos\PojectTransaction\PojectTransaction\obj\Debug\PojectTransaction.AjouterEmployer.resources
 C:\Users\Jihed\source\repos\PojectTransaction\PojectTransaction\obj\Debug\PojectTransaction.AjouterProduit.resources
 C:\Users\Jihed\source\repos\PojectTransaction\PojectTransaction\obj\Debug\PojectTransaction.AjouterQuantiter.resources
 C:\Users\Jihed\source\repos\PojectTransaction\PojectTransaction\obj\Debug\PojectTransaction.AjouterTransaction.resources

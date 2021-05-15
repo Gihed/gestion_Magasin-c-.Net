@@ -202,8 +202,7 @@ namespace PojectTransaction
             CAClient to = new CAClient();
             to.Show();
             this.Hide();
-        }
-       */
+        }*
   
 
       /*  private void btnAddProduit_Click(object sender, EventArgs e)
